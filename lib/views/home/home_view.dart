@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_web/widgets/centered_view/centered_view.dart';
+import 'package:flutter_web/widgets/course_details/course_details.dart';
 import 'package:flutter_web/widgets/navigation_bar/navigation_bar.dart';
 
 class HomeView extends StatelessWidget {
@@ -10,6 +11,13 @@ class HomeView extends StatelessWidget {
         child: Column(
           children: [
             NavigationBar(),
+            Expanded(
+              child: Row(
+                children: [
+                  CourseDetails(),
+                ],
+              ),
+            ),
           ],
         ),
       ),
